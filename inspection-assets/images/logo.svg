@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">XY 无人机智能巡检</title>
+<desc id="desc">四旋翼无人机标志，X形机臂与Y形留白机身融合，下方镜头和扫描折线表达巡检。</desc>
+<rect width="512" height="512" rx="112" fill="#B50000"/>
+<g color="#FFFFFF"><g fill="currentColor">
+<!-- Four rotor arcs: open towards the aircraft body. -->
+<path d="M161 197a53 53 0 1 1 36-36h-22a32 32 0 1 0-14 14Z"/>
+<path d="M315 161a53 53 0 1 1 36 36v-22a32 32 0 1 0-14-14Z"/>
+<path d="M351 315a53 53 0 1 1-36 36h22a32 32 0 1 0 14-14Z"/>
+<path d="M197 351a53 53 0 1 1-36-36v22a32 32 0 1 0 14 14Z"/>
+<!-- X arms: matching 144-unit height and width to the Y below. -->
+<path d="m184 184 35 13 37 37 37-37 35-13-13 35-37 37 37 37 13 35-35-13-37-37-37 37-35 13 13-35 37-37-37-37Z"/>
+</g>
+<!-- The Y is cut out of the central X, keeping both letters in one silhouette. -->
+<path d="m214 207 42 43 42-43-8 38-23 23v38l-11 14-11-14v-38l-23-23Z" fill="#B50000"/>
+<g stroke="currentColor" stroke-width="9" fill="none">
+<circle cx="256" cy="348" r="12"/>
+<path d="m226 371 30 18 30-18" stroke-linejoin="miter"/>
+</g></g>
+</svg>

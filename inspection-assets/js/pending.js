@@ -1,0 +1,2 @@
+const titles={"helmet": "安全帽识别", "vest": "反光背心识别", "net": "安全网破损识别", "pit": "基坑周边防护", "platform": "操作平台临边防护", "shelter": "搅拌机防雨棚", "commander": "塔吊指挥人员识别"};
+document.getElementById("feature-title").textContent=titles[new URLSearchParams(location.search).get("feature")]||"功能建设中";

@@ -1,0 +1,4 @@
+将 helmet_v0.html、index.html、helmet-inspection.apk 和整个 inspection-assets 文件夹一起上传到 GitHub 仓库根目录，然后提交并推送。
+不要只上传 HTML；不要修改文件夹名称或内部结构。
+原来的 helmet_v0.html 网页链接不变。也可直接访问网站根地址。
+模型仅在开启摄像头识别或图片识别时加载，首次识别仍需下载模型。

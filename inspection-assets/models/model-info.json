@@ -1,0 +1,18 @@
+{
+  "architecture": "YOLO26s",
+  "source_sha256": "c6014733702dca286b77258243a3ac6e5d12c2836e070cddb7222ce86db317b1",
+  "onnx_sha256": "7b27d1ef7e8c68e12f8e0be4e1dc07a93e971330147cff0480a3dc7f9f30904e",
+  "input": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "output": [
+    1,
+    15,
+    3549
+  ],
+  "display_class": 7,
+  "display_label": "未戴头盔"
+}

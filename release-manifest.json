@@ -1,0 +1,146 @@
+{
+  "上线说明.txt": {
+    "bytes": 405,
+    "sha256": "086af43d16904bf919c54181e9a2b7f3cd053b87c04cf5da1dfaa51bb6e83e02"
+  },
+  "index.html": {
+    "bytes": 13211,
+    "sha256": "cae5f71973ee0c782e41a02cad88a58f21d454abdff9968f20cb89c4b630101b"
+  },
+  "helmet-inspection.apk": {
+    "bytes": 48985766,
+    "sha256": "de698ca827adb871fdce21ba25c7b7284eea27feee5cfe06a2a525b69b0599bc"
+  },
+  "helmet_v0.html": {
+    "bytes": 13211,
+    "sha256": "cae5f71973ee0c782e41a02cad88a58f21d454abdff9968f20cb89c4b630101b"
+  },
+  "inspection-assets/index.html": {
+    "bytes": 2769,
+    "sha256": "10266223260d1c92877ea1e602eba589cff4da0e8c396d11caebe9a962002ed8"
+  },
+  "inspection-assets/inspection.html": {
+    "bytes": 8990,
+    "sha256": "9513fa8f82e7175ee5f170a62791b7d07db614904c321efc87206d48a2767e88"
+  },
+  "inspection-assets/pending.html": {
+    "bytes": 799,
+    "sha256": "ccc4d4161ba82c944aae973f94b899583fbca369f38412638e033c3aef53d0f8"
+  },
+  "inspection-assets/css/style.css": {
+    "bytes": 63712,
+    "sha256": "34e89a1e9673cf5b298e453af0f778f19d2c7e0db27d99ba9657ad41d856b596"
+  },
+  "inspection-assets/css/portal.css": {
+    "bytes": 3926,
+    "sha256": "0120a60fa20c84d6caa1bd0035c75dc70197ab47772bd4067a411cd4d93488c0"
+  },
+  "inspection-assets/images/camera-poster.svg": {
+    "bytes": 113,
+    "sha256": "4de8c654474557a216d3331bbc92187b0b1c787dc282ebe5a81b1cee1bc5afe0"
+  },
+  "inspection-assets/images/capture-1.png": {
+    "bytes": 3773045,
+    "sha256": "37f3af7097e14e4c1d42dad12e62b6856103142e7e9b20cffe7161a5bbb148fa"
+  },
+  "inspection-assets/images/capture-2.png": {
+    "bytes": 3745253,
+    "sha256": "d854a667b53419ade6263eaa94ea9d7adac8fb6467c9e925ae2def84f9ef4d34"
+  },
+  "inspection-assets/images/capture-3.png": {
+    "bytes": 3417992,
+    "sha256": "e115f7dbf460bba295e7f39190ec9a82654af5661388ed4f56c56869d7798866"
+  },
+  "inspection-assets/images/logo.svg": {
+    "bytes": 1245,
+    "sha256": "639bfed9b371fcdd8c62bc07f5b8f85782fa15a1fc5e8e6ff37c646b42172720"
+  },
+  "inspection-assets/js/site-import.js": {
+    "bytes": 64954,
+    "sha256": "d992d05864fbc3648a8fdd0fa5f6081aa630f59ec8a9e66a94deab18ac4c02b8"
+  },
+  "inspection-assets/js/layout.js": {
+    "bytes": 2792,
+    "sha256": "9e55571378f364733294a9c30538f1800c1c9d7dcc68f79d549bf26e9b982b06"
+  },
+  "inspection-assets/js/pending.js": {
+    "bytes": 381,
+    "sha256": "be12dcb2de3057526d7c4f8a6c8f162920d49c73c8fe5a0e31d12b3f114d5640"
+  },
+  "inspection-assets/js/notice-ui.js": {
+    "bytes": 13937,
+    "sha256": "a675584991cf5a0281f221c2e7832c55f89ae03dbe84cdf30645f90144201ddf"
+  },
+  "inspection-assets/js/site-plan-core.js": {
+    "bytes": 11526,
+    "sha256": "56409b35da54bdaf6a20a8f8f46a4812749486c22516d96355db8248d557e8bb"
+  },
+  "inspection-assets/js/detect-worker.js": {
+    "bytes": 2011,
+    "sha256": "99cd467d31281c75960c62bd827708a2a4db426ff663c7653a87622a68082c8a"
+  },
+  "inspection-assets/js/notice-preview.js": {
+    "bytes": 5385,
+    "sha256": "b5eb8b5808f8c6a977ac89b3d06805345ee7ac62ab34d57d8385ab6f1b67bfb0"
+  },
+  "inspection-assets/js/notice-export.js": {
+    "bytes": 9190,
+    "sha256": "dba5259d81b6bd7ca514cbd7a9cd0ab416caca012946f793bcc19b0ecd69d2c1"
+  },
+  "inspection-assets/js/project.js": {
+    "bytes": 17162,
+    "sha256": "2652702269a975f524bbcfcd1f81c52b9612526f0b157a386da7b39c1e3728fa"
+  },
+  "inspection-assets/js/notice-draft.js": {
+    "bytes": 728,
+    "sha256": "5a65065e16588e36e8ea4f80adfc58885078e6363f9969a4646756eff3942537"
+  },
+  "inspection-assets/js/app.js": {
+    "bytes": 41383,
+    "sha256": "ded94fe977324c503d40eb1e5db6bd96a2b88ddc973ea590070f293e764d0fc4"
+  },
+  "inspection-assets/models/model-info.json": {
+    "bytes": 352,
+    "sha256": "894b7fa75a43b4ed774b910fc558a7a0543def0ae96f3dabf383c5c4a4838de3"
+  },
+  "inspection-assets/models/helmet.onnx": {
+    "bytes": 38028368,
+    "sha256": "7b27d1ef7e8c68e12f8e0be4e1dc07a93e971330147cff0480a3dc7f9f30904e"
+  },
+  "inspection-assets/templates/notice.xlsx": {
+    "bytes": 12589,
+    "sha256": "9de8f243e2078f5ca4b7f76dd4819e65b6a19842e17bed38715b660eec7d5e3c"
+  },
+  "inspection-assets/vendor/three.module.js": {
+    "bytes": 1314681,
+    "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+  },
+  "inspection-assets/vendor/jszip.min.js": {
+    "bytes": 97630,
+    "sha256": "acc7e41455a80765b5fd9c7ee1b8078a6d160bbbca455aeae854de65c947d59e"
+  },
+  "inspection-assets/vendor/ort-wasm-simd-threaded.wasm": {
+    "bytes": 11210254,
+    "sha256": "71aef04959c5c1b6de461b6538e2058e306610034a85aad2742d0c7fd4533fe4"
+  },
+  "inspection-assets/vendor/ort.wasm.min.js": {
+    "bytes": 48327,
+    "sha256": "65e09376df69107e881b5c34d2d37aed333a366b6d941073ec518168e269b87d"
+  },
+  "inspection-assets/vendor/ort-wasm-simd-threaded.mjs": {
+    "bytes": 20856,
+    "sha256": "30dd851d9c00622940500f71ddd2ff8820c5cb65270816080175b958705385a8"
+  },
+  "inspection-assets/vendor/GLTFLoader.js": {
+    "bytes": 110278,
+    "sha256": "458b025b12213713958b07012b48aa5e84aebb562c92cfe53ea82d41bda2fd42"
+  },
+  "inspection-assets/vendor/BufferGeometryUtils.js": {
+    "bytes": 31780,
+    "sha256": "3de832095679e56578beddf70f3e90846a47ec8a886fa8eb21c973cdaef88922"
+  },
+  "inspection-assets/vendor/ONNX-Runtime-LICENSE": {
+    "bytes": 1073,
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+  }
+}
