@@ -1,3 +1,4 @@
+import {loadModelAssets,preloadModelAssets} from './model-assets.js';
 const embeddedPhotos={"capture-1.png": "images/capture-1.png", "capture-2.png": "images/capture-2.png", "capture-3.png": "images/capture-3.png"};
 import * as THREE from '../vendor/three.module.js';
 
@@ -201,8 +202,8 @@ window.helmetInference={suspend:suspendInference};
 function ensureInference(){if(!ready&&!initializing)init();}
 async function init(){initializing=true;clearTimeout(initTimer);const initTicket=++initEpoch;disposeWorker();clearTimeout(watchdog);ready=false;pending=false;clear();state.textContent='正在加载内置识别模型…';
 if(location.protocol==='file:'){initializing=false;state.textContent='请将完整文件上传 GitHub Pages，通过 HTTPS 链接打开';return;}
-initTimer=setTimeout(()=>{if(initTicket!==initEpoch)return;suspendInference();state.textContent='模型加载超时，请点击重载模型';},90000);
-try{const base=new URL('../',import.meta.url);const resources=await Promise.all(['vendor/ort.wasm.min.js','js/detect-worker.js','vendor/ort-wasm-simd-threaded.mjs','vendor/ort-wasm-simd-threaded.wasm',selectedModel().path].map(async path=>{const response=await fetch(new URL(path,base));if(!response.ok)throw Error(path);return path.endsWith('.wasm')||path.endsWith('.onnx')?response.arrayBuffer():response.text();}));if(initTicket!==initEpoch)return;
+initTimer=setTimeout(()=>{if(initTicket!==initEpoch)return;suspendInference();state.textContent='模型加载超时，请点击重载模型';},240000);
+try{const resources=await loadModelAssets(message=>{if(initTicket===initEpoch)state.textContent=message;});if(initTicket!==initEpoch)return;
 console.log('HELMET assets ready');const [runtime,workerCode,moduleText,wasm,model]=resources;// A data module can be imported by file/srcdoc workers without crossing blob origins.
 const moduleURL='data:text/javascript;charset=utf-8,'+encodeURIComponent(moduleText.replace('new URL("ort-wasm-simd-threaded.wasm",import.meta.url)','new URL("https://embedded.invalid/embedded.wasm")'));const workerURL=URL.createObjectURL(new Blob([runtime,';\n',workerCode],{type:'application/javascript'}));worker=new Worker(workerURL);worker._resources={moduleURL,workerURL,wasm,model};}catch(error){if(initTicket!==initEpoch)return;suspendInference();state.textContent='模型资源读取失败，请重载模型';return;}worker.onerror=()=>{if(initTicket!==initEpoch)return;initializing=false;clearTimeout(initTimer);ready=false;pending=false;clearTimeout(watchdog);screen.hidden=true;state.textContent='模型加载失败，请检查上传文件后点击重载模型';};
 worker.onmessage=({data})=>{if(initTicket!==initEpoch)return;if(data.type!=='result')console.log('HELMET worker',data.type,data.message||'');if(data.type==='progress'){state.textContent=data.message;return;}if(data.type==='ready'){initializing=false;clearTimeout(initTimer);ready=true;state.textContent=video.srcObject&&!video.paused?'模型就绪 · 正在开始识别…':'模型就绪 · 请开启摄像头';}else if(data.type==='error'){initializing=false;clearTimeout(initTimer);ready=false;pending=false;clearTimeout(watchdog);screen.hidden=true;state.textContent='识别失败，请重载模型：'+data.message;}else if(data.type==='result'){clearTimeout(watchdog);pending=false;const f=frameInfo;if(!f||data.id!==f.id||f.epoch!==epoch||video.srcObject!==f.source||video.paused)return;
@@ -220,3 +221,5 @@ $('reload-model').onclick=init;video.addEventListener('emptied',suspendInference
 
 
 (()=>{const video=document.getElementById('live-video'),screen=document.querySelector('.live-screen');function fitCamera(){if(video.videoWidth&&video.videoHeight)screen.style.setProperty('--camera-ratio',video.videoWidth+' / '+video.videoHeight);}video.addEventListener('loadedmetadata',fitCamera);video.addEventListener('resize',fitCamera);video.addEventListener('playing',fitCamera);window.addEventListener('resize',fitCamera);})();
+
+document.getElementById('camera-start').addEventListener('click',()=>{preloadModelAssets();});

@@ -7,6 +7,10 @@
     "bytes": 13211,
     "sha256": "cae5f71973ee0c782e41a02cad88a58f21d454abdff9968f20cb89c4b630101b"
   },
+  "release-manifest.json": {
+    "bytes": 5345,
+    "sha256": "b3338eec6073bb2b7e1418564f3615c8dcfc50ac1d6e787592febe685df16682"
+  },
   "helmet-inspection.apk": {
     "bytes": 48985766,
     "sha256": "de698ca827adb871fdce21ba25c7b7284eea27feee5cfe06a2a525b69b0599bc"
@@ -88,16 +92,20 @@
     "sha256": "dba5259d81b6bd7ca514cbd7a9cd0ab416caca012946f793bcc19b0ecd69d2c1"
   },
   "inspection-assets/js/project.js": {
-    "bytes": 17162,
-    "sha256": "2652702269a975f524bbcfcd1f81c52b9612526f0b157a386da7b39c1e3728fa"
+    "bytes": 17964,
+    "sha256": "0bef60ae2f67b27596c2fd64cd07c87208a45b6bbf830cc81c90f2089a88f90a"
   },
   "inspection-assets/js/notice-draft.js": {
     "bytes": 728,
     "sha256": "5a65065e16588e36e8ea4f80adfc58885078e6363f9969a4646756eff3942537"
   },
+  "inspection-assets/js/model-assets.js": {
+    "bytes": 2831,
+    "sha256": "f3e67ac87fb5482564d1623fda1daa4da2d9fde6800f7351f67130e55b9711a2"
+  },
   "inspection-assets/js/app.js": {
-    "bytes": 41383,
-    "sha256": "ded94fe977324c503d40eb1e5db6bd96a2b88ddc973ea590070f293e764d0fc4"
+    "bytes": 41239,
+    "sha256": "008959cbb38ba805d9c8c01a82b92aa2b30595750ed8083c0884cb2ac3f5a0d0"
   },
   "inspection-assets/models/model-info.json": {
     "bytes": 352,
